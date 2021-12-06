@@ -1,0 +1,49 @@
+@font-face {
+    font-family: roboto;
+    src: url(https://fonts.google.com/specimen/Roboto);
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    flex-grow: 1;
+    flex-shrink: 0;
+    background-color: #1F2937;
+    color: #f9faf8;
+    margin: 0px;
+    font-size: 24px;
+}
+ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    font-size: 18px;
+}
+
+
+
+.subheader {
+    display: flex;
+    background-color: #1F2937;
+    flex-grow: 1;
+}
+.main-text {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #f9faf8;
+}
+.secondary-text, a {
+    font-size: 18px;
+    color: #e5e7eb;
+
+}
+img {
+    width: 500px;
+}
