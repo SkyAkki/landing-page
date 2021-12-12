@@ -2,49 +2,101 @@
     font-family: roboto;
     src: url(fonts/Roboto-Regular.ttf);
 }
+/* ######## Main styles applying to overall ######## */
+body, html {
+    height: 100%;
+    margin: 0px;
+}
+.container {
+    border: 3px solid salmon;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.container > * {
+    flex: 1;
+}
+section {
+    border: 3px solid springgreen;
+    display: flex;
+}
+button {
+    background-color: #3882f6;
+    padding: 5px 25px;
+    border-radius: 5px;
+    border: 0px;
+    color: #f9faf8;
+    font-weight: bolder;
+    font-size: 18px;
+}
+/* ####################################  */
 
-body {
+
+
+
+/* ########### Main styles for header section ########## */
+header {
     display: flex;
     flex-wrap: wrap;
-    font-family: roboto;
-    
-}
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    
-    flex-grow: 1;
-    flex-shrink: 0;
-    background-color: #1F2937;
+    background-color: #1f2937 ;
     color: #f9faf8;
-    margin: 0px;
-    font-size: 24px;
+    align-items: center;
+    justify-content: center;
 }
+header > div{
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 550px;
+    margin-bottom: 100px;
+}
+/* ########################################### */
+
+
+
+
+/* ############ Sub-styles for header ########### */
 ul {
     display: flex;
     list-style: none;
-    gap: 15px;
-    font-size: 18px;
+    justify-content: center;
+    gap: 50px;
 }
-
-
-
-.subheader {
-    display: flex;
-    background-color: #1F2937;
-    flex-grow: 1;
-}
-.main-text {
-    font-size: 48px;
-    font-weight: bolder;
-    color: #f9faf8;
-}
-.secondary-text, a {
+a {
+    text-decoration: none;
     font-size: 18px;
     color: #e5e7eb;
+}
+div > nav{
+    flex-basis: 50%;
+}
+.header > h2 {
+    margin-left: 120px;
+}
+/* ####################################  */
 
+
+/* ####### Sub-styles for sub-header ############ */
+h1 {
+    font-size: 48px;
+    font-weight: bolder;
+    margin-bottom: 5px;
+    margin-top: 0px;
 }
-img {
-    width: 600px;
+div > article{
+    flex-basis: 25%;
+    
 }
+.mainpic {
+    align-self: stretch;
+    background-color: gray;
+    min-width: 700px;
+    text-align: center;
+    line-height: 230px;
+}
+.subheader {
+    gap: 350px; /* important step */
+}
+
+/* ############################################# */
